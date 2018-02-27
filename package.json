@@ -1,0 +1,54 @@
+{
+  "name": "shouldihookupwithmybarista.com",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "test": "xo"
+  },
+  "dependencies": {
+    "body-parser": "~1.18.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "express": "~4.15.5",
+    "node-sass-middleware": "0.9.8",
+    "serve-favicon": "~2.4.5",
+    "ejs-layouts": "^0.0.1",
+    "colors": "^1.1.2"
+  },
+  "devDependencies": {
+    "node-gyp": "^3.6.2",
+    "xo": "^0.18.2"
+  },
+  "xo": {
+    "space": true,
+    "envs": [
+      "browser",
+      "jquery"
+    ],
+    "rules": {
+      "quotes": [
+        "error",
+        "single",
+        {
+          "avoidEscape": true
+        }
+      ],
+      "camelcase": 1,
+      "brace-style": 0,
+      "no-prototype-builtins": 0,
+      "dot-notation": 0,
+      "linebreak-style": "off",
+      "comma-dangle": "off",
+      "no-eq-null": "off",
+      "eqeqeq": [
+        "error",
+        "smart"
+      ],
+      "unicorn/filename-case": "off",
+      "no-restricted-modules": "off",
+      "no-use-extend-native/no-use-extend-native": "off",
+      "unicorn/catch-error-name": "off"
+    }
+  }
+}
