@@ -43,6 +43,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+em {
+  font-style: italic;
+}
 
 $device-y-lg-min: 590px;
 $device-x-lg-min: 640px;
