@@ -35,7 +35,11 @@ app.get('/', (req, res) => {
 });
 
 app.get('/what', (req, res) => {
-  res.layout('layouts/what', {}, {content: {block: 'what', data: {}}});
+  res.layout('layouts/what', {title: "What's This?"}, {content: {block: 'what', data: {}}});
+});
+
+app.get('/faq', (req, res) => {
+  res.layout('layouts/what', {title: "FAQ"}, {content: {block: 'faq', data: {}}});
 });
 
 app.get('/:type', (req, res) => {
