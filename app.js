@@ -42,6 +42,11 @@ app.get('/faq', (req, res) => {
   res.layout('layouts/what', {title: "FAQ"}, {content: {block: 'faq', data: {}}});
 });
 
+app.get(/(spouse|(girl|boy)friend)/g, (req, res) => {
+  const type = req.params[0];
+  res.layout('layouts/application', {type}, {content: {block: 'yes', data: {type}}});
+});
+
 app.get('/:type', (req, res) => {
   const type = req.params.type.replace(/-/g, ' ');
   res.layout('layouts/application', {type}, {content: {block: 'should', data: {type}}});
